@@ -107,32 +107,32 @@ This helps users clearly visualize their improvement journey and focus on what m
 ---
 
 ### 📊 User Dashboard
-![User Dashboard – Overview of user progress, interview history, and actions](screenshots/dashboard.png)
+![User Dashboard – Overview of user progress, interview history, and actions](dashboard.png)
 
 ---
 
 ### ⚙️ Interview Setup Page
-![Interview Setup Page – Configure interview role, difficulty, and settings](screenshots/interview-setup.png)
+![Interview Setup Page – Configure interview role, difficulty, and settings](interview-setup.png)
 
 ---
 
 ### 📝 MCQ Question Screen
-![MCQ Question Screen – Multiple choice questions during the interview](screenshots/mcq-question.png)
+![MCQ Question Screen – Multiple choice questions during the interview](mcq-question.png)
 
 ---
 
 ### ✍️ Descriptive Question Screen
-![Descriptive Question Screen – Open-ended questions for written answers](screenshots/descriptive-question.png)
+![Descriptive Question Screen – Open-ended questions for written answers](descriptive-question.png)
 
 ---
 
 ### 🤖 AI Feedback & Score Screen
-![AI Feedback Screen – AI-generated score, feedback, and improvement tips](screenshots/feedback.png)
+![AI Feedback Screen – AI-generated score, feedback, and improvement tips](feedback.png)
 
 ---
 
 ### 📄 Session Summary Screen
-![Session Summary Screen – Complete interview performance summary](screenshots/session-summary.png)
+![Session Summary Screen – Complete interview performance summary](session-summary.png)
 
 ---
 
@@ -179,7 +179,7 @@ Developed by **Ravi Kumar Chinta**
 https://www.linkedin.com/in/chinta-ravi-kumar-a0a763280  
 
 💻 **GitHub:**  
-https://github.com/ravi-kumar-chinta  
+https://github.com/chinta-ravi-kumar  
 
 ---
 
