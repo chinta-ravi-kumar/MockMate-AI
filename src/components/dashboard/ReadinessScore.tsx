@@ -29,20 +29,20 @@ export const ReadinessScore = ({ score, previousScore, totalInterviews }: Readin
 
   return (
     <AnimatedCard variant="gradient" delay={50} className="overflow-hidden h-full">
-      <CardContent className="flex flex-col items-center justify-center h-full py-4 px-3">
-        <p className="text-xs font-medium text-muted-foreground mb-2">Readiness Score</p>
+      <CardContent className="flex flex-col items-center justify-center h-full py-8 px-4">
+        <p className="text-sm font-semibold text-muted-foreground mb-4">Interview Readiness</p>
         <CircularProgress
           value={score}
           max={100}
-          size="md"
+          size="lg"
           label="/ 100"
         />
-        <div className="mt-3 text-center">
-          <p className={`text-sm font-semibold ${readinessLevel.color}`}>
+        <div className="mt-4 text-center">
+          <p className={`text-base font-bold ${readinessLevel.color}`}>
             {readinessLevel.label}
           </p>
           {previousScore !== undefined && totalInterviews > 1 && (
-            <div className="flex items-center justify-center gap-1 mt-1 text-xs">
+            <div className="flex items-center justify-center gap-1.5 mt-2 text-sm">
               {getTrendIcon()}
               <span className={scoreDiff >= 0 ? "text-success" : "text-destructive"}>
                 {scoreDiff >= 0 ? "+" : ""}{scoreDiff.toFixed(0)} pts

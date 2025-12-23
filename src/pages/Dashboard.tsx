@@ -262,10 +262,10 @@ const Dashboard = () => {
           </Link>
         </div>
 
-        {/* Readiness Score & Stats Row */}
-        <div className="grid lg:grid-cols-5 gap-4 mb-8">
-          {/* Readiness Score - Takes up 1 column on large screens */}
-          <div className="lg:col-span-1">
+        {/* Readiness Score & Stats Row - 2 columns layout */}
+        <div className="grid lg:grid-cols-3 gap-4 mb-8">
+          {/* Readiness Score - Large card spanning 2 rows on left */}
+          <div className="lg:row-span-2">
             <ReadinessScore 
               score={stats.readinessScore}
               previousScore={stats.previousSessionScore ? 
@@ -276,8 +276,8 @@ const Dashboard = () => {
             />
           </div>
           
-          {/* Stats Grid - Takes up 4 columns on large screens */}
-          <div className="lg:col-span-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+          {/* Stats Grid - 2x2 grid on right taking 2 columns */}
+          <div className="lg:col-span-2 grid grid-cols-2 gap-4">
             <StatCard
               title="Total Interviews"
               value={stats.totalInterviews}
