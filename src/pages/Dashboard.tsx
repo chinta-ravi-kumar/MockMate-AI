@@ -262,52 +262,63 @@ const Dashboard = () => {
           </Link>
         </div>
 
-        {/* Readiness Score & Progress Comparison */}
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <ReadinessScore 
-            score={stats.readinessScore}
-            previousScore={stats.previousSessionScore ? 
-              Math.round((stats.previousSessionScore * 7) + (stats.mcqAccuracy * 0.2) + Math.min((stats.totalInterviews - 1) * 5, 20)) : 
-              undefined
-            }
-            totalInterviews={stats.totalInterviews}
-          />
+        {/* Readiness Score & Stats Row */}
+        <div className="grid lg:grid-cols-5 gap-4 mb-8">
+          {/* Readiness Score - Takes up 1 column on large screens */}
+          <div className="lg:col-span-1">
+            <ReadinessScore 
+              score={stats.readinessScore}
+              previousScore={stats.previousSessionScore ? 
+                Math.round((stats.previousSessionScore * 7) + (stats.mcqAccuracy * 0.2) + Math.min((stats.totalInterviews - 1) * 5, 20)) : 
+                undefined
+              }
+              totalInterviews={stats.totalInterviews}
+            />
+          </div>
+          
+          {/* Stats Grid - Takes up 4 columns on large screens */}
+          <div className="lg:col-span-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+            <StatCard
+              title="Total Interviews"
+              value={stats.totalInterviews}
+              icon={Target}
+              iconColor="text-primary"
+              delay={100}
+              className="h-full"
+            />
+            <StatCard
+              title="Average Score"
+              value={`${stats.averageScore.toFixed(1)}/10`}
+              icon={Award}
+              iconColor="text-warning"
+              delay={150}
+              className="h-full"
+            />
+            <StatCard
+              title="MCQ Accuracy"
+              value={`${stats.mcqAccuracy.toFixed(0)}%`}
+              icon={Brain}
+              iconColor="text-success"
+              delay={200}
+              className="h-full"
+            />
+            <StatCard
+              title="Descriptive Avg"
+              value={`${stats.normalAvgScore.toFixed(1)}/10`}
+              icon={TrendingUp}
+              iconColor="text-accent"
+              delay={250}
+              className="h-full"
+            />
+          </div>
+        </div>
+
+        {/* Progress Comparison */}
+        <div className="mb-8">
           <ProgressComparison
             firstAttemptScore={stats.firstAttemptScore}
             latestAttemptScore={stats.latestAttemptScore}
             totalInterviews={stats.totalInterviews}
-          />
-        </div>
-
-        {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-          <StatCard
-            title="Total Interviews"
-            value={stats.totalInterviews}
-            icon={Target}
-            iconColor="text-primary"
-            delay={150}
-          />
-          <StatCard
-            title="Average Score"
-            value={`${stats.averageScore.toFixed(1)}/10`}
-            icon={Award}
-            iconColor="text-warning"
-            delay={200}
-          />
-          <StatCard
-            title="MCQ Accuracy"
-            value={`${stats.mcqAccuracy.toFixed(0)}%`}
-            icon={Brain}
-            iconColor="text-success"
-            delay={250}
-          />
-          <StatCard
-            title="Descriptive Avg"
-            value={`${stats.normalAvgScore.toFixed(1)}/10`}
-            icon={TrendingUp}
-            iconColor="text-accent"
-            delay={300}
           />
         </div>
 
