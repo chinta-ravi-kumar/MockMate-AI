@@ -1,73 +1,67 @@
-# Welcome to your Lovable project
+🚀 Excited to share my latest project – MockMate AI 🤖
 
-## Project info
+Train smarter. Interview stronger.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
-## How can I edit this code?
 
-There are several ways of editing your application.
+MockMate AI is an AI-powered interview preparation web application designed to help students and job seekers practice interviews in a realistic and interactive way.
 
-**Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+The platform supports both MCQ-based and descriptive interview questions, enabling users to strengthen technical knowledge while improving answer articulation. Users can create accounts, practice interviews, receive instant AI-driven feedback, and track their progress through a smart, personalized dashboard.
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+✨ Key Features:
 
-Follow these steps:
+🔹 AI-generated interview questions (Technical, HR, Behavioral)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🔹 MCQ and descriptive question modes
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+🔹 Real-time answer evaluation and feedback
 
-# Step 3: Install the necessary dependencies.
-npm i
+🔹 Difficulty levels (Easy / Medium / Hard)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+🔹 User authentication and profile management
 
-**Edit a file directly in GitHub**
+🔹 Interview Readiness Score with visual indicators
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🔹 AI-identified weak areas & next-action suggestions
 
-**Use GitHub Codespaces**
+🔹 Personalized dashboard with progress tracking and analytics
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🔹 Interview history and performance insights
 
-## What technologies are used for this project?
+🔹 Dark / Light mode toggle for better accessibility
 
-This project is built with:
+🔹 Clean UI with gradient themes, smooth transitions, and balanced grids
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+🛠 Tech Stack:
 
-## Can I connect a custom domain to my Lovable project?
+🔸 Frontend: React (Vite) + TypeScript
 
-Yes, you can!
+🔸 Styling: Tailwind CSS (Dark/Light mode support)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+🔸 Backend & Auth: Supabase
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+🔸 AI: Free & open-source AI models
+
+🔸 Tooling: Node.js, ESLint, PostCSS
+
+
+
+This project focuses on making interview preparation smarter, structured, and actionable through AI-driven insights and modern design.
+
+
+
+🔗 GitHub: https://github.com/ravi-kumar-chinta/MockMate-AI
+
+
+
+⭐ If you find this project useful, please star the repository — suggestions, feedback, and collaborations are always welcome!
+
+
+
+#AI #React #TypeScript #Supabase #TailwindCSS #WebDevelopment #InterviewPreparation #StudentProjects #OpenSource #Portfolio #LearningByBuilding
