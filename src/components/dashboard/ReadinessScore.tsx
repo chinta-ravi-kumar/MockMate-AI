@@ -28,31 +28,25 @@ export const ReadinessScore = ({ score, previousScore, totalInterviews }: Readin
   const readinessLevel = getReadinessLevel();
 
   return (
-    <AnimatedCard variant="gradient" delay={100} className="overflow-hidden">
-      <CardHeader className="pb-2">
-        <CardTitle className="text-lg flex items-center gap-2">
-          Interview Readiness Score
-        </CardTitle>
-        <CardDescription>Based on your recent performance</CardDescription>
-      </CardHeader>
-      <CardContent className="flex flex-col items-center py-6">
+    <AnimatedCard variant="gradient" delay={50} className="overflow-hidden h-full">
+      <CardContent className="flex flex-col items-center justify-center h-full py-4 px-3">
+        <p className="text-xs font-medium text-muted-foreground mb-2">Readiness Score</p>
         <CircularProgress
           value={score}
           max={100}
-          size="lg"
+          size="md"
           label="/ 100"
         />
-        <div className="mt-4 text-center">
-          <p className={`font-semibold ${readinessLevel.color}`}>
+        <div className="mt-3 text-center">
+          <p className={`text-sm font-semibold ${readinessLevel.color}`}>
             {readinessLevel.label}
           </p>
           {previousScore !== undefined && totalInterviews > 1 && (
-            <div className="flex items-center justify-center gap-1 mt-2 text-sm">
+            <div className="flex items-center justify-center gap-1 mt-1 text-xs">
               {getTrendIcon()}
               <span className={scoreDiff >= 0 ? "text-success" : "text-destructive"}>
                 {scoreDiff >= 0 ? "+" : ""}{scoreDiff.toFixed(0)} pts
               </span>
-              <span className="text-muted-foreground">from last session</span>
             </div>
           )}
         </div>
