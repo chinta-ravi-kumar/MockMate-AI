@@ -102,7 +102,7 @@ This helps users clearly visualize their improvement journey and focus on what m
 ## 📷 Screenshots
 
 ### 🔐 Login Page
-![Login Page – User authentication screen where users sign in](screenshots/login.png)
+![Login Page – User authentication screen where users sign in](login.png)
 
 ---
 
